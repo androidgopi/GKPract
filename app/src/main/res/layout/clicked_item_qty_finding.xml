@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/thumnail_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:padding="5dp" />
+
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:background="@drawable/textview_background"-->
+    <!--android:padding="5dp"-->
+    <!--tools:context=".MainActivity">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/individual_image_coment_text"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:ems="10"-->
+    <!--android:hint="Write comment here"-->
+    <!--android:paddingRight="20dp"-->
+    <!--android:textColor="@color/color_black"-->
+    <!--android:textSize="@dimen/text_size"-->
+    <!--android:typeface="monospace" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/text_clear_button"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="10dp"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:layout_alignBaseline="@+id/individual_image_coment_text"-->
+    <!--android:layout_alignBottom="@+id/individual_image_coment_text"-->
+    <!--android:layout_alignRight="@+id/individual_image_coment_text"-->
+    <!--android:background="@drawable/ic_cancel_btn" />-->
+
+    <!--</RelativeLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/textview_background">
+
+        <EditText
+            android:id="@+id/individual_image_coment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/zxing_transparent"
+            android:hint="Write comment here"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_blue_btn_bg"
+            android:padding="5dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size" />
+
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_blue_btn_bg"
+            android:padding="5dp"
+            android:text="Ok"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/next_pitcure_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_blue_btn_bg"
+            android:padding="5dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/text_clear_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_blue_btn_bg"
+            android:padding="5dp"
+            android:text="clear"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@color/color_gray"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/zoom_remove_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_cancel_btn"
+        tools:ignore="VectorDrawableCompat" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_below="@+id/zoom_remove_photo"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    <com.kireeti.gkpract.customClass.TouchImageView
+        android:id="@+id/touchImage"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:padding="2dp"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

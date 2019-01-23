@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    >
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/adapter_image"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_launcher_background"
+        app:siRadius="15dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/remove_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_cancel_btn"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:id="@+id/file_name"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/adapter_image"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:id="@+id/file_comment"
+        android:layout_below="@+id/file_name"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"/>
+
+
+
+</RelativeLayout>

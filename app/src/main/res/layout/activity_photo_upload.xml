@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kireeti.gkpract.Receiving_Photo_UploadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/receiving_toolbar_bg" />
+
+
+            <RelativeLayout
+                android:id="@+id/toobar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/back_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_back_arrow" />
+
+                <TextView
+                    android:id="@+id/selction_for_warehouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@drawable/ic_stock"
+                    android:text="@string/D_warehouse"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:id="@+id/lagout_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_logout" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Activity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toobar_layout"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/receiving"
+                android:textColor="#09648a"
+                android:textSize="@dimen/text_size" />
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_below="@+id/Activity_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/ic_receiving" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/trailer_folio_autocomplete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/textview_border"
+                            android:gravity="left"
+                            android:hint="@string/container"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:id="@+id/container_no_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:visibility="gone"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:textColor="@color/color_black"
+                            android:textSize="@dimen/text_size" />
+
+                        <Button
+                            android:id="@+id/takephoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/round_blue_btn_bg"
+                            android:drawableLeft="@drawable/ic_camera"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="30dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/capture_image"
+                            android:textAllCaps="false"
+                            android:textColor="@color/color_white" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/rectangular_image"
+            android:layout_width="230dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:layout_marginBottom="30dp"
+            app:siRadius="15dp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/photo_list_layout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Photos"
+                android:textColor="@color/color_splash_text"
+                android:textSize="@dimen/text_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/left_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_left_gray" />
+
+                <ImageView
+                    android:id="@+id/right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_right_gray" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/receiving_photos"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveimage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_blue_btn_bg"
+        android:drawableLeft="@drawable/ic_save"
+        android:drawablePadding="15dp"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white" />
+
+</RelativeLayout>

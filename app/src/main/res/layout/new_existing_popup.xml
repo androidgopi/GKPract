@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/newuser_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@drawable/round_blue_colored"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:drawableLeft="@drawable/ic_add_user"
+        android:drawablePadding="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/new_user"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/title_size" />
+
+
+    <Button
+        android:id="@+id/existing_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:drawableLeft="@drawable/ic_existing"
+        android:drawablePadding="10dp"
+        android:background="@drawable/round_blue_colored"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/existing"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/title_size" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write Reason here :"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/title_size"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/close_btn_comment_Txt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/textview_border"
+            android:drawablePadding="5dp"
+            android:gravity="left"
+            android:hint="@string/close_popup_edittext"
+            android:padding="7dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/dark_gray"
+            android:textSize="@dimen/text_size" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_blue_btn_bg"
+            android:padding="7dp"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_blue_btn_bg"
+            android:layout_weight="1"
+            android:padding="7dp"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+
+
+</LinearLayout>
